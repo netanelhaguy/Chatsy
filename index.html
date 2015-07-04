@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Chatnonymous</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+  <link rel="stylesheet" href="fontello.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZxFx-A4y4flWRUNhLlEmbnyNy9V9Rfv4"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div id="chat">
+      <header>
+        <div id="color">
+          <div id="user-color"></div>
+        </div>
+        <div id="users">
+          <span id="users-online"></span>
+          <i class="icon-user"></i>
+        </div>
+        <div id="name">
+          <span id="tag" type="text" autocomplete="off" maxlength="12" contenteditable="true"></span>
+        </div>
+      </header>
+      <div id="messages"></div>
+      <form>
+        <input id="m" autocomplete="off" required autofocus maxlength="140"/><button>Send</button>
+      </form>
+    </div>
+    <div id="map">
+      <div id="map-container"></div>
+      <div id="mobile-arrow"><i class="icon-down-open"></i></div>
+    </div>
+  </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52633301-3', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
